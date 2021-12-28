@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Cta, Brand, Navbar } from "./components";
+import {  Navbar } from "./components";
 import { Header } from "./containers";
 
 
