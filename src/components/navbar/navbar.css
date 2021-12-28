@@ -1,0 +1,131 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 6rem;
+}
+
+.navbar-links {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-logo {
+	margin-right: 2rem;
+}
+
+.navbar-logo img {
+	width: 62.56px;
+	height: 16.02px;
+}
+
+.navbar-links .link-container {
+	display: flex;
+	flex-direction: row;
+	margin-right: 237px;
+}
+
+.navbar-links .link-container p,
+.navbar .signin-btn p,
+.navbar .menu-container p {
+	color: #fff;
+	font-family: var(--font-family);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25px;
+	text-transform: capitalize;
+	margin: 0 2rem;
+	cursor: pointer;
+}
+
+.navbar .signin-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar .signin-btn button,
+.navbar .menu-container button {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #ffffff;
+	background: #ff4820;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.navbar .mobile-menu {
+	display: none;
+	margin-left: 1rem;
+	position: relative;
+}
+
+.navbar .mobile-menu svg {
+	cursor: pointer;
+}
+
+.navbar .menu-container {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-align: end;
+	background: var(--color-footer);
+	padding: 1rem;
+	margin-top: 1rem;
+	min-width: 180px;
+	border-radius: 5px;
+	box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu-container p {
+	margin: 1rem 0;
+}
+
+.navbar .menu-container .mobile-signin-btn {
+	display: none;
+}
+
+@media screen and (max-width: 1050px) {
+	.navbar-links .link-container {
+		display: none;
+	}
+
+	.navbar .mobile-menu {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.navbar {
+		padding: 2rem 4rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.navbar {
+		padding: 2rem;
+	}
+
+	.navbar .signin-btn {
+		display: none;
+	}
+
+	.navbar .menu-container {
+		top: 20px;
+	}
+
+	.navbar .menu-container .mobile-signin-btn {
+		display: block;
+	}
+}
