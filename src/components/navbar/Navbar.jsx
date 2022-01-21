@@ -4,6 +4,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 
 const Menu = () => (
+	// a react componet to return all the nav links
 	<>
 		<p>
 			<a href="#home">Home</a>
